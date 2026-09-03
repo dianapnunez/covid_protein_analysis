@@ -4,26 +4,28 @@ This repository contains a structural bioinformatics script and Jupyter Notebook
 
 ## 📌 Project Overview
 - **Target PDB ID:** 6LU7 (The crystal structure of COVID-19 main protease in complex with an inhibitor).
-**Chain A:** The main COVID-19 protease enzyme polymer structure.
-**Chain C:** The N3 inhibitor drug molecular ligand structure.
+-**Chain A:** The main COVID-19 protease enzyme polymer structure.
+-**Chain C:** The N3 inhibitor drug molecular ligand structure.
 
-##  ⚙️ Features
-- **High-Speed Translation:** Translates viral codons into clean single-letter amino acid sequences.
+##  ⚙️Core Pipeline Features
+- **Genomic Parsing:** Extracts raw genomic data records directly from FASTA formats using Biopython.
+- **High-Speed Translation:** Translates viral DNA into RNA, and translates into amino acid chains.
+- **Structural Visualization:** Selectively applies customized 3D molecular layer styles to isolate individual target chains and drug ligands.
 
-## Project Structure
+## 📂 Project Structure
 
+```text
 your-project-directory/
 ├── data/
-│   └── 6LU7.pdb
+│   ├── 6LU7.pdb
 │   └── sequence.fasta
 ├── visualizing_3D_structure_of_covid-19.ipynb
 ├── analysis_script.py
 ├── protein_structure.html
 └── README.md
+```
 
 ## Project Files
-
-## 📂 Project Component Directory
 
 | File / Folder | Type | Description |
 | :--- | :--- | :--- |
@@ -51,11 +53,12 @@ Because raw genomic FASTA sequences can be quite large, they are excluded from t
 1. Create a folder named `data/` in the project root directory.
 2. Download your target COVID-19 genomic sequence file (e.g., from NCBI GenBank).
 3. Save and rename the file exactly to: `data/sequence.fasta`
+4. Download the 6LU7.pdb crystal structure file from the RCSB PDB database and place it in the same folder.
 
 ### 📦 3. Install Dependencies
 Ensure you have Biopython installed in your local or virtual environment:
 ```bash
-pip install biopython py3Dmol
+pip install biopython py3Dmol pandas
 ```
 
 ###  💻 4. Run the Pipeline
