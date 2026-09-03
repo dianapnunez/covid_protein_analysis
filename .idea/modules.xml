@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/covid_protein_analysis.iml" filepath="$PROJECT_DIR$/.idea/covid_protein_analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/structural_bioinformatics_tutorial.iml" filepath="$PROJECT_DIR$/.idea/structural_bioinformatics_tutorial.iml" />
     </modules>
   </component>
 </project>
