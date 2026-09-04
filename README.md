@@ -49,7 +49,7 @@ git clone https://github.com/dianapnunez/structural_bioinformatics_tutorial
 cd structural_bioinformatics_tutorial
 ```
 
-###  📂  2. Set Up the Data Directory
+###  2. Set Up the Data Directory
 Because raw genomic FASTA sequences can be quite large, they are excluded from this Git repository via `.gitignore`. You must set up the data directory locally:
 
 1. Create a folder named `data/` in the project root directory.
@@ -57,25 +57,38 @@ Because raw genomic FASTA sequences can be quite large, they are excluded from t
 3. Save and rename the file exactly to: `data/sequence.fasta`
 4. Download the 6LU7.pdb crystal structure file from the RCSB PDB database and place it in the same folder.
 
-### 📦  3. Install Dependencies
+### 3. Install Dependencies
 Ensure you have Biopython installed in your local or virtual environment:
 ```bash
 pip install -r requirements.txt
 ```
 
-###  💻  4. Run the Pipeline
+###  4. Run the Pipeline
 Execute the main analysis script to parse the FASTA header records:
 ```bash
 python analysis_script.py
 ```
 
+## 🧠  Learning Outcomes
+
+* **Transcribe viral DNA sequences**
+* **Translate RNA nucleotide strings**
+* **Process sequence-to-structure pipelines**
+* **Manage local project dependencies**
+* **Parse 3D atomic coordinates**
+* **Render interactive 3D protein structures**
+* **Isolate target polymer chains and small-molecule drug ligands**
+* **Apply customized layer styling**
+* **Generate portable HTML assets**
+
+## 🔮  Future Directions
+
+* **Multi-Format Structural Parsing & Validation** (PDB, mmCIF, and MTZ)
+* **Automated Data Curation & Quality Control (QC) Pipeline**
+* **Experimental Density Docking & Cryo-EM Alignment** (EMDB & AlphaFold)
+* **Biophysical Feature Mapping & Functional Insight Logging**
+
 ## 🎓  Acknowledgements
 
 This practice project is adapted from the tutorial by **JCharisTech (Jesse E. Agbe)**:
 * 📺 **Video Tutorial:** [Protein Sequence Analysis of Covid19 using BioPython on YouTube](https://youtube.com/watch?v=dxVKG2gNSos&t=1805s)
-
-## 🔮  Future Directions
-* **Multi-Format Parsing:** Integrate `Gemmi` to process legacy PDB, modern mmCIF, and raw `.mtz` reflection data. This includes building automated validation scripts to check coordinate consistency across formats.
-* **Automated Data QC Pipeline:** Use the RCSB PDB REST API to batch-download structures programmatically. This will power an automated quality control pipeline that flags and filters files with low resolution ($>2.5\text{ \AA}$), poor refinement scores ($R_{\text{free}}$), or severe Ramachandran outliers.
-* **Experimental Density Docking:** Implement tools to align predictive machine learning models (e.g., AlphaFold predictions) into real Cryo-EM and crystallography electron density maps from the EMDB to calculate real-space cross-correlation and RMSD values.
-* **Biophysical Feature Mapping:** Develop automated downstream analysis scripts to compute localized surface electrostatic potential shifts and active site binding pocket volumes. This bridges raw coordinate data with functional biological insights.

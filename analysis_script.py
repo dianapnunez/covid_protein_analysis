@@ -1,10 +1,6 @@
 # Adapted from the JCharisTech (Jesse E. Agbe) tutorial
 from Bio import SeqIO
 
-#load the file from our data subdirectory
-# for record in SeqIO.parse("data/sequence.fasta", "fasta"):
-#    print(record)
-
 #begin analysis
 cov_record = SeqIO.read("data/sequence.fasta", "fasta")
 print(cov_record)
